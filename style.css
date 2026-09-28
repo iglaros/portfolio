@@ -1,8 +1,11 @@
+html {
+  scroll-behavior: smooth;
+} 
 
 .container {
   max-width:1200px;
   margin:0 auto;
-  padding:0 40px;
+  padding: 0 40px 80px;
 }
 
 header {
@@ -40,7 +43,7 @@ header {
 }
 
 body {
-  font-family: Arial, sans-serif;
+font-family: 'Manrope', Arial, sans-serif;
   font-size: 18px;
   line-height: 1.5;
   margin: 0;
@@ -77,6 +80,7 @@ body {
 }
 
 h1 {
+  font-family: 'Unbounded', Arial, sans-serif;
   font-size:32px;
   line-height:36px;
 }
@@ -98,13 +102,15 @@ section {
 }
 
 .factoid {
+  color: #e63946;
 flex: 0 0 300px;
   width: 300px;
 }
 
 .factoid-number {
-  font-size: 90px;
-  font-weight: bold;
+  font-family: 'Unbounded', Arial, sans-serif;
+  font-weight: 700;
+  font-size: clamp(56px, 10vw, 90px);
   line-height: 1;
 }
 
@@ -159,4 +165,164 @@ p {margin: 0 0 .66em 0;}
 
 .contacts-links i {
   font-size: 32px;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 12px;
+
+  padding: 12px 24px;
+  background-color: #e63946;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 18px;
+
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.project-link:hover {
+  background-color: #c1121f;
+  transform: translateY(-2px);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+h1, h2, h3, p, a {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+@media (max-width: 900px) {
+
+  .hero-images {
+    flex-direction: column;
+  }
+  .hero-images img:first-child,
+  .hero-images img:last-child {
+    width: 100%;
+    height: auto;
+  }
+
+  .checklist {
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+  }
+  .factoid {
+    flex: none;
+    width: 100%;
+  }
+  .project,
+  .project-reverse {
+    flex-direction: column;
+    gap: 25px;
+    align-items: flex-start;
+  }
+  .project-photo,
+  .project-text {
+    width: 100%;
+    flex: none;
+  }
+
+  .edit-columns {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .edit-columns div {
+    flex: 1 1 calc(50% - 10px);
+    min-width: 180px;
+  }
+  .edit-columns div:nth-child(4) {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+  }
+
+  .contacts-links {
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+}
+
+.project-text p,
+.checklist-text p,
+.edit-case p {
+  margin: 0 0 .66em 0;
+}
+
+@media (max-width: 600px) {
+
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .header-content {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .menu {
+    gap: 14px;
+  }
+  .menu a {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .factoid-number {
+    font-size: 64px;
+  }
+  .factoid-text {
+    font-size: 18px;
+  }
+
+  .hero-images img {
+    height: auto;
+  }
+
+  .edit-columns {
+    flex-direction: column;
+  }
+  .edit-columns div {
+    flex: 1 1 100%;
+    min-width: 0;
+  }
+  .edit-columns div:nth-child(4) {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+  }
+
+  .contacts-links {
+    gap: 30px;
+    justify-content: center;
+  }
+  section {
+    margin-bottom: 50px;
+  }
 }
