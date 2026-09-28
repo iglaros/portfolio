@@ -54,6 +54,7 @@ font-family: 'Manrope', Arial, sans-serif;
   display: flex;
   gap: 20px;
   align-items: stretch;
+  margin-bottom: 40px;
 }
 
 .hero-images img {
