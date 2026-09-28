@@ -1,0 +1,162 @@
+
+.container {
+  max-width:1200px;
+  margin:0 auto;
+  padding:0 40px;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 20px 40px;
+    border-bottom: 1px solid #eee;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.avatar {width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.menu {display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.menu a {text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    transition: color 0.2s;
+}
+
+.menu a:hover {
+    color: #e67e22;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+  color: #000;
+}
+
+.hero-images {
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.hero-images img {
+  object-fit: cover;
+  height: 450px;
+}
+
+.hero-images img:first-child {
+  width: 70%;
+}
+
+.hero-images img:last-child {
+  width: 30%;
+}
+
+.project-photo,
+.project-text {
+  flex: 1;
+}
+
+.project-photo img {
+  width:100%;
+  display:block;
+}
+
+h1 {
+  font-size:32px;
+  line-height:36px;
+}
+
+.project,
+.project-reverse {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.project-reverse {
+  flex-direction: row-reverse;
+}
+
+section {
+  margin-bottom: 80px;
+
+}
+
+.factoid {
+flex: 0 0 300px;
+  width: 300px;
+}
+
+.factoid-number {
+  font-size: 90px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.factoid-text {
+  font-size: 22px;
+  margin-top: 15px;
+}
+
+.checklist {
+  display: flex;
+  gap: 120px;
+  align-items: center;
+}
+
+.edit-columns {
+  margin-top: 50px;
+  display: flex;
+  gap: 30px;
+  align-items: stretch;
+}
+
+.edit-columns div {
+  flex: 1;
+} 
+
+.edit-columns div:nth-child(4) {
+  border-left: 1px solid #ddd;
+  padding-left: 30px;
+}
+
+h2 {padding-bottom: 10px;}
+h3 {margin-top: 0; margin-bottom: 0;}
+p {margin: 0 0 .66em 0;}
+
+.contacts-links {
+  display: flex;
+  gap: 80px;
+}
+
+
+.contacts-links a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  color: #0066ff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+
+.contacts-links i {
+  font-size: 32px;
+}
